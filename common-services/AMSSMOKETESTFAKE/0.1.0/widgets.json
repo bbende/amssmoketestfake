@@ -1,0 +1,35 @@
+{
+  "layouts": [
+    {
+      "layout_name": "default_amssmoketestfake_dashboard",
+      "display_name": "Standard AMSSMOKETESTFAKE Dashboard",
+      "section_name": "AMSSMOKETESTFAKE_SUMMARY",
+      "widgetLayoutInfo": [
+        {
+          "widget_name": "FakeMetric",
+          "description": "description",
+          "widget_type": "GRAPH",
+          "is_visible": true,
+          "metrics": [
+            {
+              "name": "FakeMetric",
+              "metric_path": "metrics/FakeMetric",
+              "service_name": "AMSSMOKETESTFAKE",
+              "component_name": "AMSSMOKETESTFAKE_MASTER"
+            }
+          ],
+          "values": [
+            {
+              "name": "Fake Metric",
+              "value": "${FakeMetric}"
+            }
+          ],
+          "properties": {
+            "graph_type": "LINE",
+            "time_range": "1"
+          }
+        }
+      ]
+    }
+  ]
+}

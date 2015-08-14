@@ -1,0 +1,21 @@
+{
+  "AMSSMOKETESTFAKE_MASTER": {
+    "Component": [{
+        "type": "ganglia",
+        "metrics": {
+          "default": {
+            "metrics/Testing": {
+              "metric": "Testing",
+              "pointInTime": false,
+              "temporal": true
+            },
+            "metrics/FakeMetric": {
+              "metric": "FakeMetric",
+              "pointInTime": false,
+              "temporal": true
+            }
+          }
+        }
+    }]
+  }
+}
